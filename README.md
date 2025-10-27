@@ -44,7 +44,6 @@ dex-brand-kit/
 │   ├── hooks/              # Custom React hooks
 │   ├── styles/             # Global styles and CSS variables
 │   └── utils/              # Utility functions
-└── documentation/          # Project documentation
 ```
 
 ## 🎨 Features
@@ -232,27 +231,13 @@ npm run build
 ## 📞 Support
 
 For brand guidelines questions:
-- Email: brand@dexterousmedics.com
+- mav3rickism on X
 - Review guidelines section in the app
 
 For technical issues:
 - Check documentation
 - Review error messages in browser console
 
-## 📄 License
-
-© 2024 Dexterous Medics. All rights reserved.
-
-Brand assets and guidelines are proprietary. This website code is for internal use.
-
-## 🎉 Credits
-
-**Built with:**
-- React 18
-- Vite 5
-- Lucide React (icons)
-- JSZip (ZIP generation)
-- Vite PWA Plugin
 
 **Fonts:**
 - Space Grotesk (Google Fonts)

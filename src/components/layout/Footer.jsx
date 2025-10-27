@@ -70,13 +70,13 @@ function Footer({ onDownloadAll, isDownloading }) {
             <h3 className={styles.footerHeading}>Information</h3>
             <ul className={styles.footerList}>
               <li className={styles.footerText}>
-                Version: Dexterous Medics Brand Guidelines v1.0
+                Made with ❤️ by Maverick
               </li>
               <li className={styles.footerText}>
                 Last updated: {lastUpdated}
               </li>
               <li>
-                <a href="mailto:brand@dexterousmedics.com" className={styles.footerLink}>
+                <a href="kamaludeenmoussa@gmail.com" className={styles.footerLink}>
                   <Mail size={16} />
                   Contact for Questions
                 </a>
