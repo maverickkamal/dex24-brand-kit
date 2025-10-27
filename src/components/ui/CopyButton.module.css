@@ -1,0 +1,81 @@
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  font-family: var(--font-body);
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+/* Sizes */
+.small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.medium {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.large {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+}
+
+/* Variants */
+.default {
+  background-color: var(--color-muted-teal);
+  color: var(--color-deep-teal);
+}
+
+.default:hover {
+  background-color: var(--color-light-teal);
+  color: white;
+}
+
+.primary {
+  background-color: var(--color-deep-teal);
+  color: white;
+}
+
+.primary:hover {
+  background-color: var(--color-light-teal);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-deep-teal);
+  border: 1px solid var(--color-deep-teal);
+}
+
+.ghost:hover {
+  background-color: var(--color-muted-teal);
+}
+
+/* Copied state */
+.copied {
+  background-color: var(--color-deep-teal) !important;
+  color: white !important;
+}
+
+/* Icon and text */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: inline-block;
+}
+
+/* Active state */
+.copyButton:active {
+  transform: scale(0.95);
+}
+

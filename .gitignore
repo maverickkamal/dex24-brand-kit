@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation (except main README)
+documentation/
+DEPLOYMENT.md
+MAINTENANCE.md
+TESTING.md
+PERFORMANCE.md
+FIXES_SUMMARY.md
+LATEST_FIXES.md
+PROJECT_COMPLETION_SUMMARY.md
+BEFORE_DEPLOYMENT_CHECKLIST.md
+FINAL_STATUS.md
+START_HERE.md
+brand-kit-website.plan.md
+
+# Keep only main README
+!README.md
+
+# PWA
+dev-dist/

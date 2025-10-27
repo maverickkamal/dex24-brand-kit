@@ -1,0 +1,341 @@
+.gradientsSection {
+  margin-top: var(--spacing-xxl);
+  padding-top: var(--spacing-xxl);
+  border-top: 2px solid var(--color-muted-teal);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-deep-teal);
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-heading);
+}
+
+.sectionDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-graphite);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Gradients Grid */
+.gradientsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 769px) {
+  .gradientsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gradientsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Gradient Card */
+.gradientCard {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.gradientCard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.gradientPreview {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.directionIndicator {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: var(--color-graphite);
+  font-weight: 600;
+}
+
+.gradientInfo {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.gradientName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-deep-teal);
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+.colorTransition {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: var(--color-graphite);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.colorTransition code {
+  background-color: var(--color-muted-teal);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+}
+
+.gradientUsage {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-graphite);
+  margin: 0;
+}
+
+.gradientWhen {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-graphite);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.gradientWhen strong {
+  color: var(--color-deep-teal);
+}
+
+.actionButtons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.downloadGradient {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.5rem 1rem;
+  background-color: var(--color-muted-teal);
+  color: var(--color-deep-teal);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.downloadGradient:hover {
+  background-color: var(--color-light-teal);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Code Details */
+.codeDetails {
+  margin-top: var(--spacing-md);
+  border-top: 1px solid var(--color-muted-teal);
+  padding-top: var(--spacing-md);
+}
+
+.codeSummary {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-deep-teal);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  padding: var(--spacing-xs) 0;
+}
+
+.codeSummary::-webkit-details-marker {
+  display: none;
+}
+
+.codeSummary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: var(--spacing-xs);
+  transition: transform var(--transition-fast);
+}
+
+.codeDetails[open] .codeSummary::before {
+  transform: rotate(90deg);
+}
+
+.codeSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.codeBlock {
+  position: relative;
+  background-color: var(--color-graphite);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.codeLabel {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.codeContent {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  overflow-x: auto;
+}
+
+.codeContent code {
+  color: inherit;
+  background: none;
+  padding: 0;
+}
+
+.copyCodeButton {
+  position: absolute;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+}
+
+/* Usage Rules */
+.usageRules {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.rulesTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-deep-teal);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.rulesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 769px) {
+  .rulesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ruleColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.ruleHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-graphite);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-muted-teal);
+}
+
+.checkIcon {
+  color: var(--color-deep-teal);
+}
+
+.xIcon {
+  color: var(--color-crimson);
+}
+
+.ruleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.ruleList li {
+  position: relative;
+  padding-left: var(--spacing-lg);
+  line-height: 1.5;
+  color: var(--color-graphite);
+  font-size: 0.9375rem;
+}
+
+.ruleList li::before {
+  content: '•';
+  position: absolute;
+  left: var(--spacing-xs);
+  color: var(--color-light-teal);
+  font-weight: 700;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .gradientsSection {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+  }
+  
+  .gradientPreview {
+    height: 150px;
+  }
+  
+  .gradientInfo {
+    padding: var(--spacing-md);
+  }
+  
+  .usageRules {
+    padding: var(--spacing-lg);
+  }
+}
+
